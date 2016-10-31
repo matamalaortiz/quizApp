@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h4 This is the home page
+  p Using templates!
+  h1= myname
+  a(href='http://www.matamala.info' id='link' target='_blank') My website in Pug
+  br 
+  br
+  form(method='POST', action='/newuser')
+    input(type='text' name='username' placeholder='Enter name here')
+    input(type='submit' name='submit' value='Save User')  
+  
